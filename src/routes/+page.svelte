@@ -1,5 +1,6 @@
 <script lang="ts">
   import BlogCard from '../components/blog-card.svelte';
+  import Icon from '@iconify/svelte';
 
   let staticBlogs: string[] = ['cock and ball torture', 'bdsm', 'margot robbie mommy'];
 </script>
@@ -25,7 +26,10 @@
     for web and mobile devices.
   </p>
 
-  <a href="/contact">Get in touch </a>
+  <a href="/contact" class="hover:underline gap-2 flex items-center">
+    <p>Get in touch</p>
+    <Icon icon="ep:right" />
+  </a>
 
   <div>
     <div class="flex items-center justify-between py-4 border-b-2 border-black">
