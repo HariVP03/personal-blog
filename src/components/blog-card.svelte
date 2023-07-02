@@ -1,0 +1,19 @@
+<script lang="ts">
+  import Icon from '@iconify/svelte';
+
+  export let title: string;
+  export let slug: string;
+</script>
+
+<a href={`/blog/${slug}`}>
+  <div class="flex w-full items-center justify-between py-4 border-b-2 border-black">
+    <p>
+      {title}
+    </p>
+
+    <div class="underline gap-2 flex items-center">
+      <p>Read</p>
+      <Icon icon="ep:right" />
+    </div>
+  </div>
+</a>
