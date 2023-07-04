@@ -23,8 +23,8 @@
   </a>
 
   <p class="animate-appear-in-x-once">
-    I'm a full-stack developer based in India. I have a passion for web design and love to create
-    for web and mobile devices.
+    I'm a software developer based in India. I love to transform people's lives and businesses
+    through software!
   </p>
 
   <a href="/contact" class="hover:underline gap-2 flex items-center animate-appear-in-x-once">
