@@ -1,21 +1,23 @@
 import type { Blog } from '../types/blog';
 
-export const GET_BLOGS = `
-  query GetBlogs($limit: Int = 4) {
+export const GET_BLOG = `
+query GetBlog($slug:String) {
 
-    blogPostCollection(limit: $limit) {
-      total
-      items {
-        title
-        slug
-        publishedAt
-        body
-      }
+  blogPostCollection(where:{
+    slug:$slug
+  },limit:1){
+    total
+    items{
+      title
+      slug
+      publishedAt
+      body
     }
   }
+}
 `;
 
-export const parseBlogs = (data: any) => {
+export const parseBlog = (data: any) => {
   const { blogPostCollection } = data;
 
   return blogPostCollection.items.map((item: any) => {
@@ -31,5 +33,5 @@ export const parseBlogs = (data: any) => {
       }),
       body
     };
-  }) as Blog[];
+  })[0] as Blog;
 };
