@@ -16,7 +16,7 @@
       width="175px"
       height="175px"
       class="rounded-full w-[175px] h-[175px] object-cover object-top mb-8"
-      src="/images/avatar.webp"
+      src="https://images.ctfassets.net/cfn4h6xzm2t4/6pAVkCV3jPSflDcquDpSec/a2813bf762761b0e90d4525a222feaf1/IMG_3783-modified.webp?h=250&w=250&q=50&fm=webp"
       alt="Person standing on McDonald's leg"
     />
     <h1>Hey, I’m Hari! <br /> A proud learning freak.</h1>
