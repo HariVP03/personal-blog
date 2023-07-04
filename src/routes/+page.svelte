@@ -1,8 +1,9 @@
 <script lang="ts">
   import BlogCard from '../components/blog-card.svelte';
   import Icon from '@iconify/svelte';
+  import type { PageData } from './$types';
 
-  let staticBlogs: string[] = ['cock and ball torture', 'bdsm', 'margot robbie mommy'];
+  export let data: PageData;
 </script>
 
 <head>
@@ -36,8 +37,8 @@
       <h1>Sexy blogs</h1>
     </div>
 
-    {#each staticBlogs as title, i}
-      <BlogCard {title} slug={i + ''} />
+    {#each data.blogs as blog, i}
+      <BlogCard title={blog.title} slug={blog.slug} />
     {/each}
   </div>
 </div>
