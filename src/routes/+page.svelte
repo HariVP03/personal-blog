@@ -6,11 +6,11 @@
 </script>
 
 <head>
-  <title> Hari Vishnu Parashar - Full Stack Developer </title>
+  <title>Hari Vishnu Parashar - Full Stack Developer</title>
 </head>
 
 <div class="flex flex-col gap-8">
-  <a href="/">
+  <a class="animate-appear-in-x-once" href="/">
     <img
       width="175px"
       height="175px"
@@ -21,17 +21,17 @@
     <h1>Hey, I’m Hari! <br /> A proud learning freak.</h1>
   </a>
 
-  <p>
+  <p class="animate-appear-in-x-once">
     I'm a full-stack developer based in India. I have a passion for web design and love to create
     for web and mobile devices.
   </p>
 
-  <a href="/contact" class="hover:underline gap-2 flex items-center">
+  <a href="/contact" class="hover:underline gap-2 flex items-center animate-appear-in-x-once">
     <p>Get in touch</p>
     <Icon icon="ep:right" />
   </a>
 
-  <div>
+  <div class="animate-appear-in-y-once">
     <div class="flex items-center justify-between py-4 border-b-2 border-black">
       <h1>Sexy blogs</h1>
     </div>
