@@ -2,7 +2,7 @@
   import '../app.css';
 </script>
 
-<div class="w-[40%] mx-auto px-6 py-16">
+<div class="lg:w-[40%] mx-auto px-6 py-16 md:w-[50%] sm:w-full">
   <slot />
 </div>
 

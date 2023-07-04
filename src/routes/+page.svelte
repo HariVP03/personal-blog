@@ -1,5 +1,5 @@
 <script lang="ts">
-  import BlogCard from '../components/blog-card.svelte';
+  import BlogCard from '$lib/components/blog-card.svelte';
   import Icon from '@iconify/svelte';
   import type { PageData } from './$types';
 

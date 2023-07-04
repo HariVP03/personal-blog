@@ -1,5 +1,5 @@
 import { client } from '$lib/server';
-import { GET_BLOG, parseBlog } from '../../../graphql';
+import { GET_BLOG, parseBlog } from '$lib/graphql';
 
 export async function load({ params }) {
   const blog = parseBlog(

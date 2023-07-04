@@ -1,4 +1,4 @@
-import { GET_BLOGS, parseBlogs } from '../graphql';
+import { GET_BLOGS, parseBlogs } from '$lib/graphql';
 import { client } from '$lib/server';
 
 export async function load() {

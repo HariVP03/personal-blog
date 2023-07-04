@@ -1,4 +1,4 @@
-import type { Blog } from '../types/blog';
+import type { Blog } from '$lib/types/blog';
 
 export const GET_BLOG = `
 query GetBlog($slug:String) {
