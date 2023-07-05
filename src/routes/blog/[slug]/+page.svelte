@@ -1,10 +1,11 @@
 <script lang="ts">
   import SvelteMarkdown from 'svelte-markdown';
   import type { PageData } from './$types';
+  import BlogP from '$lib/components/blog-p.svelte';
+  import BlogCode from '$lib/components/blog-code.svelte';
+  import BlogCodespan from '$lib/components/blog-codespan.svelte';
 
   export let data: PageData;
-
-  console.log({ data });
 </script>
 
 <head>
@@ -26,11 +27,18 @@
   </div>
 </a>
 
-<h1 class="mt-8 animate-appear-in-y-once">
+<h1 class="mt-1 animate-appear-in-y-once">
   {data.blog.title}
 </h1>
-<p class="mb-16 text-sm animate-appear-in-y-once">{data.blog.publishedAt}</p>
+<p class="mb-7 text-sm animate-appear-in-y-once">{data.blog.publishedAt}</p>
 
-<div class="mb-16 text-sm animate-appear-in-y-once">
-  <SvelteMarkdown source={data.blog.body} />
+<div class="mb-16 text-sm animate-appear-in-y-once font-serif">
+  <SvelteMarkdown
+    renderers={{
+      paragraph: BlogP,
+      code: BlogCode,
+      codespan: BlogCodespan
+    }}
+    source={data.blog.body}
+  />
 </div>

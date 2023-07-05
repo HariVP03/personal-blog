@@ -19,16 +19,18 @@ export default {
       },
       fontFamily: {
         heading: ['Outfit', 'sans-serif'],
-        mono: ['Roboto Mono', 'monospace']
+        mono: ['Roboto Mono', 'monospace'],
+        serif: ['Roboto Slab', 'serif']
       },
       colors: {
-        background: '#FAFAF8',
+        background: { main: '#FAFAF8' },
         card: {
           background: '#F5F5F5'
         },
         text: {
           headings: '#252525',
-          paragraph: '#333333'
+          paragraph: '#333333',
+          code: '#333333'
         }
       }
     }
