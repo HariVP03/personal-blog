@@ -37,7 +37,7 @@
       <h1>Sexy blogs</h1>
     </div>
 
-    {#each data.blogs as blog, i}
+    {#each data.blogs as blog}
       <BlogCard title={blog.title} slug={blog.slug} />
     {/each}
   </div>
