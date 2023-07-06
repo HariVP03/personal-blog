@@ -4,4 +4,5 @@ export type Blog = {
   publishedAt: string;
   body: string;
   excerpt?: string;
+  lastUpdatedAt?: string;
 };

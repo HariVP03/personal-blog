@@ -8,7 +8,9 @@ export const GET_BLOGS = `
       items {
         title
         slug
-        publishedAt
+        sys {
+          publishedAt
+        }
         body
         excerpt
       }
@@ -20,12 +22,12 @@ export const parseBlogs = (data: any) => {
   const { blogPostCollection } = data;
 
   return blogPostCollection.items.map((item: any) => {
-    const { title, slug, publishedAt, body, excerpt } = item;
+    const { title, slug, sys, body, excerpt } = item;
 
     return {
       title,
       slug,
-      publishedAt: new Date(publishedAt).toLocaleDateString('en-US', {
+      publishedAt: new Date(sys.publishedAt).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
