@@ -2,13 +2,12 @@
   import BlogCard from '$lib/components/blog-card.svelte';
   import Icon from '@iconify/svelte';
   import type { PageData } from './$types';
+  import Meta from '$lib/components/meta.svelte';
 
   export let data: PageData;
 </script>
 
-<head>
-  <title>Hari Vishnu Parashar - Full Stack Developer</title>
-</head>
+<Meta />
 
 <div class="flex flex-col gap-8">
   <a class="animate-appear-in-x-once" href="/">

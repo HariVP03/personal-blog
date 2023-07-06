@@ -4,15 +4,12 @@
   import P from '$lib/components/renderers/p.svelte';
   import Code from '$lib/components/renderers/code.svelte';
   import Codespan from '$lib/components/renderers/codespan.svelte';
+  import Meta from '$lib/components/meta.svelte';
 
   export let data: PageData;
 </script>
 
-<head>
-  <title>
-    {data.blog.title}
-  </title>
-</head>
+<Meta title={data.blog.title} description={data.blog.excerpt} />
 
 <a class="animate-appear-in-x-once" href="/">
   <div class="flex gap-8 items-center">

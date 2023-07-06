@@ -1,7 +1,7 @@
 import { client } from '$lib/server';
 import { GET_BLOG, parseBlog } from '$lib/graphql';
 
-export async function load({ params }) {
+export async function load({ params }: any) {
   const blog = parseBlog(
     await client({
       query: GET_BLOG,
@@ -10,8 +10,6 @@ export async function load({ params }) {
       }
     })
   );
-
-  console.log({ blog });
 
   return { blog };
 }

@@ -3,4 +3,5 @@ export type Blog = {
   slug: string;
   publishedAt: string;
   body: string;
+  excerpt?: string;
 };

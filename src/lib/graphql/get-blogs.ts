@@ -10,6 +10,7 @@ export const GET_BLOGS = `
         slug
         publishedAt
         body
+        excerpt
       }
     }
   }
@@ -19,7 +20,7 @@ export const parseBlogs = (data: any) => {
   const { blogPostCollection } = data;
 
   return blogPostCollection.items.map((item: any) => {
-    const { title, slug, publishedAt, body } = item;
+    const { title, slug, publishedAt, body, excerpt } = item;
 
     return {
       title,
@@ -29,7 +30,8 @@ export const parseBlogs = (data: any) => {
         month: 'long',
         day: 'numeric'
       }),
-      body
+      body,
+      excerpt
     };
   }) as Blog[];
 };
