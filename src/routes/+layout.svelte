@@ -1,5 +1,9 @@
 <script>
   import '../app.css';
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
+
+  inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <div class="lg:w-[40%] mx-auto px-6 py-16 md:w-[50%] sm:w-full">

@@ -35,6 +35,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "prismjs": "^1.29.0",
     "svelte-markdown": "^0.2.3"
   }
