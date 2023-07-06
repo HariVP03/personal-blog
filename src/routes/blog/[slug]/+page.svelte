@@ -1,9 +1,9 @@
 <script lang="ts">
   import SvelteMarkdown from 'svelte-markdown';
   import type { PageData } from './$types';
-  import BlogP from '$lib/components/blog-p.svelte';
-  import BlogCode from '$lib/components/blog-code.svelte';
-  import BlogCodespan from '$lib/components/blog-codespan.svelte';
+  import P from '$lib/components/renderers/p.svelte';
+  import Code from '$lib/components/renderers/code.svelte';
+  import Codespan from '$lib/components/renderers/codespan.svelte';
 
   export let data: PageData;
 </script>
@@ -35,9 +35,9 @@
 <div class="mb-16 text-sm animate-appear-in-y-once font-serif">
   <SvelteMarkdown
     renderers={{
-      paragraph: BlogP,
-      code: BlogCode,
-      codespan: BlogCodespan
+      paragraph: P,
+      code: Code,
+      codespan: Codespan
     }}
     source={data.blog.body}
   />

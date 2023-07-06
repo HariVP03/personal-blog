@@ -8,7 +8,7 @@
 
 <style lang="postcss">
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Outfit:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto+Slab:wght@400&display=swap');
   :global(html) {
     background-color: theme(colors.background.main);
   }

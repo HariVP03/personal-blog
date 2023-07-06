@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/adapter-static': ^2.0.2
   '@sveltejs/kit': ^1.20.4
+  '@types/prismjs': ^1.26.0
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   autoprefixer: ^10.4.14
@@ -14,6 +15,7 @@ specifiers:
   postcss: ^8.4.24
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.10.1
+  prismjs: ^1.29.0
   svelte: ^4.0.0
   svelte-check: ^3.4.3
   svelte-markdown: ^0.2.3
@@ -23,6 +25,7 @@ specifiers:
   vite: ^4.3.6
 
 dependencies:
+  prismjs: 1.29.0
   svelte-markdown: 0.2.3_svelte@4.0.1
 
 devDependencies:
@@ -30,6 +33,7 @@ devDependencies:
   '@sveltejs/adapter-auto': 2.1.0_@sveltejs+kit@1.21.0
   '@sveltejs/adapter-static': 2.0.2_@sveltejs+kit@1.21.0
   '@sveltejs/kit': 1.21.0_svelte@4.0.1+vite@4.3.9
+  '@types/prismjs': 1.26.0
   '@typescript-eslint/eslint-plugin': 5.60.1_nxpvb2fnld4vk2v7o3443dfbne
   '@typescript-eslint/parser': 5.60.1_knnjr7kq4rs2qtmvdkf5nzsniu
   autoprefixer: 10.4.14_postcss@8.4.24
@@ -480,6 +484,10 @@ packages:
   /@types/marked/4.3.1:
     resolution: {integrity: sha512-vSSbKZFbNktrQ15v7o1EaH78EbWV+sPQbPjHG+Cp8CaNcPFUEfjZ0Iml/V0bFDwsTlYe8o6XC5Hfdp91cqPV2g==}
     dev: false
+
+  /@types/prismjs/1.26.0:
+    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
+    dev: true
 
   /@types/pug/2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
@@ -1742,6 +1750,11 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
+
+  /prismjs/1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+    engines: {node: '>=6'}
+    dev: false
 
   /punycode/2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
