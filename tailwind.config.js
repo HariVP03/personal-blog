@@ -14,8 +14,8 @@ export default {
         }
       },
       animation: {
-        'appear-in-x-once': 'appear-in-x 700ms cubic-bezier(0.4, 0, 0.6, 1)',
-        'appear-in-y-once': 'appear-in-y 700ms cubic-bezier(0.4, 0, 0.6, 1)'
+        'appear-in-x-once': 'appear-in-x 1000ms cubic-bezier(0.4, 0, 0.6, 1)',
+        'appear-in-y-once': 'appear-in-y 1000ms cubic-bezier(0.4, 0, 0.6, 1)'
       },
       fontFamily: {
         heading: ['Outfit', 'sans-serif'],
