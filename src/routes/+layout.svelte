@@ -30,6 +30,15 @@
     font-size: 36px;
   }
 
+  @media (max-width: 768px) {
+    :global(h1) {
+      font-size: 22px;
+      line-height: 32px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
   :global(code) {
     font-family: theme(fontFamily.mono);
     font-size: 16px;
@@ -40,7 +49,7 @@
 
   :global(p, a) {
     font-family: theme(fontFamily.mono);
-    font-family: 16px;
+    font-size: 16px;
     line-height: 28px;
     font-weight: 500;
     color: theme(colors.text.paragraph);
