@@ -9,7 +9,7 @@ export default {
           '100%': { transform: 'translate(0)', opacity: 1 }
         },
         'appear-in-y': {
-          '0%': { transform: 'translateY(-5px)', opacity: 0 },
+          '0%': { transform: 'translateY(-10px)', opacity: 0 },
           '100%': { transform: 'translate(0)', opacity: 1 }
         }
       },
