@@ -1,13 +1,43 @@
-<script>
+<script lang="ts">
   import '../app.css';
   import { dev } from '$app/environment';
   import { inject } from '@vercel/analytics';
 
   inject({ mode: dev ? 'development' : 'production' });
+
+  const links: {
+    href: string;
+    text: string;
+  }[] = [
+    {
+      href: 'https://twitter.com/haritheman',
+      text: 'Twitter'
+    },
+    {
+      href: 'https://www.instagram.com/hari_theman/',
+      text: 'Instagram'
+    }
+  ];
 </script>
 
 <div class="lg:w-[40%] mx-auto px-6 py-16 md:w-[50%] sm:w-full">
   <slot />
+
+  <div class="flex flex-col w-full mt-8 animate-appear-in-y-once">
+    <div class="w-full border-t-2 border-t-black" />
+    <div class="flex justify-between items-center mt-4">
+      <a href="/" class="hover:underline">
+        <p class="text-sm">© 2023 Hari Vishnu</p>
+      </a>
+      <div class="flex gap-4">
+        {#each links as { href, text }}
+          <a {href} target="_blank" class="flex items-center gap-2 hover:underline">
+            <p class="text-sm">{text}</p>
+          </a>
+        {/each}
+      </div>
+    </div>
+  </div>
 </div>
 
 <style lang="postcss">
@@ -30,10 +60,22 @@
     font-size: 36px;
   }
 
+  :global(h2) {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
   @media (max-width: 768px) {
     :global(h1) {
       font-size: 22px;
       line-height: 32px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    :global(h2) {
+      font-size: 20px;
+      line-height: 28px;
       margin-top: 8px;
       margin-bottom: 8px;
     }
