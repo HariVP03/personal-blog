@@ -10,17 +10,6 @@
 <Meta />
 
 <div class="flex flex-col gap-8">
-  <a class="animate-appear-in-x-once" href="/">
-    <img
-      width="175px"
-      height="175px"
-      class="rounded-full w-[175px] h-[175px] object-cover object-top mb-8"
-      src="https://images.ctfassets.net/cfn4h6xzm2t4/6pAVkCV3jPSflDcquDpSec/244599c8cbc4d1408058cfc275992fae/IMG_0586-modified.JPG?h=300&q=100&fm=webp"
-      alt="Person standing on McDonald's leg"
-    />
-    <h1>Hey, I’m Hari! <br /> A proud learning freak.</h1>
-  </a>
-
   <p class="animate-appear-in-x-once">
     I'm a software developer based in India. I love to transform people's lives and businesses
     through software!

@@ -2,6 +2,8 @@
   import '../app.css';
   import { dev } from '$app/environment';
   import { inject } from '@vercel/analytics';
+  import PhotoHeader from '$lib/components/photo-header.svelte';
+  import { page } from '$app/stores';
 
   inject({ mode: dev ? 'development' : 'production' });
 
@@ -21,6 +23,7 @@
 </script>
 
 <div class="lg:w-[40%] mx-auto px-6 py-16 md:w-[50%] sm:w-full">
+  <PhotoHeader introductionHeader={$page.url.pathname === '/'} />
   <slot />
 
   <div class="flex flex-col w-full mt-8 animate-appear-in-y-once">
