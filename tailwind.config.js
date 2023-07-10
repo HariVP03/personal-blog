@@ -5,11 +5,11 @@ export default {
     extend: {
       keyframes: {
         'appear-in-x': {
-          '0%': { transform: 'translateX(-10px)', opacity: 0.25 },
+          '0%': { transform: 'translateX(-10px)', opacity: 0.1 },
           '100%': { transform: 'translate(0)', opacity: 1 }
         },
         'appear-in-y': {
-          '0%': { transform: 'translateY(-10px)', opacity: 0.25 },
+          '0%': { transform: 'translateY(-10px)', opacity: 0.1 },
           '100%': { transform: 'translate(0)', opacity: 1 }
         }
       },
