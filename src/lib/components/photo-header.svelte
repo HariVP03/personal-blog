@@ -2,7 +2,7 @@
   export let introductionHeader: boolean = false;
 
   const src =
-    'https://images.ctfassets.net/cfn4h6xzm2t4/6pAVkCV3jPSflDcquDpSec/244599c8cbc4d1408058cfc275992fae/IMG_0586-modified.JPG?h=250&q=100&fm=webp';
+    'https://images.ctfassets.net/cfn4h6xzm2t4/6pAVkCV3jPSflDcquDpSec/b5aeed25e16030590510ae78b13d0bdf/4b3a25ad-a982-4363-af37-1cb802b1c5b9.jpg?h=500&fm=webp';
   const alt = 'Picture of a person standing in grass in black and white';
 </script>
 
