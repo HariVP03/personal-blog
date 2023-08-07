@@ -23,7 +23,9 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.harivishnu.com/" />
+  {#if !includeArticleMetaTags}
+    <meta property="og:url" content="https://www.harivishnu.com/" />
+  {/if}
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={image} />
@@ -37,6 +39,7 @@
 
   <!-- Article meta tags -->
   {#if includeArticleMetaTags}
+    <meta property="og:url" content={`https://www.harivishnu.com/${slug}`} />
     <meta name="title" property="og:title" content={title} />
     <meta name="description" property="og:description" content={description} />
     <meta property="article:published_time" content={publishedTime} />
