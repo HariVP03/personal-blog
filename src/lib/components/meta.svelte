@@ -11,6 +11,8 @@
   const author = 'Hari Vishnu Parashar';
   const twitterCreator = '@haritheman';
   const twitterSite = '@haritheman';
+
+  export let slug = '';
 </script>
 
 <svelte:head>
@@ -43,5 +45,6 @@
     <meta property="og:site_name" content={title} />
     <meta property="twitter:site" content={twitterCreator} />
     <meta property="twitter:creator" content={twitterSite} />
+    <link rel="canonical" href={`https://www.harivishnu.com/${slug}`} />
   {/if}
 </svelte:head>

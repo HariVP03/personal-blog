@@ -15,6 +15,7 @@
   description={data.blog.excerpt}
   includeArticleMetaTags={true}
   publishedTime={new Date(data.blog.publishedAt).toISOString()}
+  slug={data.blog.slug}
 />
 
 <article>
