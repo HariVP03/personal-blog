@@ -16,6 +16,7 @@
   includeArticleMetaTags={true}
   publishedTime={new Date(data.blog.publishedAt).toISOString()}
   slug={data.blog.slug}
+  image={data.blog.image}
 />
 
 <article>

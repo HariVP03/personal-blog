@@ -13,6 +13,9 @@ query GetBlog($slug:String) {
       publishedAt
       body
       excerpt
+      image {
+        url
+      }
     }
   }
 }
@@ -33,7 +36,8 @@ export const parseBlog = (data: any) => {
         day: 'numeric'
       }),
       body,
-      excerpt
+      excerpt,
+      image: item?.image?.url
     };
   })[0] as Blog;
 };

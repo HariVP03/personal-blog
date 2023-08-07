@@ -1,4 +1,5 @@
 export type Blog = {
+  image: string | undefined;
   title: string;
   slug: string;
   publishedAt: string;
