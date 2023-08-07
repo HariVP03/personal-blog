@@ -4,6 +4,13 @@
     "Hey! I'm Hari. A software developer based in India. I love to transform people's lives and businesses through software!";
   export let image: string =
     'https://images.ctfassets.net/cfn4h6xzm2t4/3fNW9JMUdC1biiq2uoHrOl/bde361df45015517d3a6608acc3d81de/2.png';
+
+  export let includeArticleMetaTags: boolean = false;
+  export let publishedTime = '2021-08-01T00:00:00+00:00';
+
+  const author = 'Hari Vishnu Parashar';
+  const twitterCreator = '@haritheman';
+  const twitterSite = '@haritheman';
 </script>
 
 <svelte:head>
@@ -25,4 +32,14 @@
   <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={image} />
+
+  <!-- Article meta tags -->
+  {#if includeArticleMetaTags}
+    <meta property="article:published_time" content={publishedTime} />
+    <meta property="article:author" content={author} />
+    <meta property="author" content={author} />
+    <meta property="og:site_name" content={title} />
+    <meta property="twitter:site" content={twitterCreator} />
+    <meta property="twitter:creator" content={twitterSite} />
+  {/if}
 </svelte:head>

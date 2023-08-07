@@ -10,7 +10,12 @@
   export let data: PageData;
 </script>
 
-<Meta title={data.blog.title} description={data.blog.excerpt} />
+<Meta
+  title={data.blog.title}
+  description={data.blog.excerpt}
+  includeArticleMetaTags={true}
+  publishedTime={new Date(data.blog.publishedAt).toISOString()}
+/>
 
 <article>
   <h1 class="mt-1 animate-appear-in-y-once">
