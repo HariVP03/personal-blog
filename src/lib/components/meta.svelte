@@ -35,9 +35,11 @@
 
   <!-- Article meta tags -->
   {#if includeArticleMetaTags}
+    <meta name="title" property="og:title" content={title} />
+    <meta name="description" property="og:description" content={description} />
     <meta property="article:published_time" content={publishedTime} />
     <meta property="article:author" content={author} />
-    <meta property="author" content={author} />
+    <meta name="author" content={author} />
     <meta property="og:site_name" content={title} />
     <meta property="twitter:site" content={twitterCreator} />
     <meta property="twitter:creator" content={twitterSite} />
