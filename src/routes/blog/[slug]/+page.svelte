@@ -4,6 +4,7 @@
   import P from '$lib/components/renderers/p.svelte';
   import Code from '$lib/components/renderers/code.svelte';
   import Codespan from '$lib/components/renderers/codespan.svelte';
+  import Strong from '$lib/components/renderers/strong.svelte';
   import Meta from '$lib/components/meta.svelte';
 
   export let data: PageData;
@@ -22,7 +23,9 @@
       renderers={{
         paragraph: P,
         code: Code,
-        codespan: Codespan
+        codespan: Codespan,
+        strong: Strong,
+        list: P
       }}
       source={data.blog.body}
     />

@@ -6,7 +6,7 @@
 </script>
 
 <a href={`/blog/${slug}`}>
-  <div class="flex w-full items-center justify-between py-4 border-b-2 border-black">
+  <div class="flex w-full items-center gap-2 justify-between py-4 border-b-2 border-black">
     <p>
       {title}
     </p>

@@ -6,7 +6,7 @@ export async function load() {
     await client({
       query: GET_BLOGS,
       variables: {
-        limit: 3
+        limit: 5
       }
     })
   );
