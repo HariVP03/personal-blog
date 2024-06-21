@@ -66,7 +66,7 @@
 
   :global(h2) {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
   }
 
   :global(h3) {
@@ -76,7 +76,7 @@
 
   :global(h4) {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   @media (max-width: 768px) {

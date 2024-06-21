@@ -7,7 +7,7 @@
 </script>
 
 {#if !introductionHeader}
-  <a class="animate-appear-in-x-once" href="/">
+  <a class="animate-appear-in-x-once no-underline" href="/">
     <div class="flex gap-8 items-center animate-appear-in-x-once">
       <img
         width="120px"
