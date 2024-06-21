@@ -69,6 +69,16 @@
     font-size: 32px;
   }
 
+  :global(h3) {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  :global(h4) {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
   @media (max-width: 768px) {
     :global(h1) {
       font-size: 22px;
@@ -99,5 +109,10 @@
     line-height: 28px;
     font-weight: 500;
     color: theme(colors.text.paragraph);
+  }
+
+  :global(a) {
+    color: blue;
+    text-decoration: underline;
   }
 </style>
