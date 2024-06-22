@@ -5,7 +5,7 @@
   export let slug: string;
 </script>
 
-<a href={`/blog/${slug}`} className="no-underline">
+<a href={`/blog/${slug}`} class="no-underline">
   <div class="flex w-full items-center gap-2 justify-between py-4 border-b-2 border-black">
     <p>
       {title}
