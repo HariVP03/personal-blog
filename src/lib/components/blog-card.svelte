@@ -11,7 +11,7 @@
       {title}
     </p>
 
-    <div class="underline decoration-black gap-2 flex items-center">
+    <div class="gap-2 flex items-center">
       <p>Read</p>
       <Icon icon="ep:right" />
     </div>
