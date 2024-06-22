@@ -15,7 +15,7 @@
     through software!
   </p>
 
-  <a href="/contact" class="hover:underline gap-2 flex items-center animate-appear-in-x-once">
+  <a href="/contact" class="hover:underline no-underline decoration-black gap-2 flex items-center animate-appear-in-x-once">
     <p>Get in touch</p>
     <Icon icon="ep:right" />
   </a>

@@ -20,7 +20,7 @@
     </div>
   </a>
 {:else}
-  <a class="animate-appear-in-x-once" href="/">
+  <a class="animate-appear-in-x-once no-underline" href="/">
     <img
       width="175px"
       height="175px"

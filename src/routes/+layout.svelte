@@ -29,12 +29,12 @@
   <div class="flex flex-col w-full mt-8 animate-appear-in-y-once">
     <div class="w-full border-t-2 border-t-black" />
     <div class="flex justify-between items-center mt-4">
-      <a href="/" class="hover:underline">
+      <a href="/" class="hover:underline no-underline decoration-black">
         <p class="text-sm">© 2023 Hari Vishnu</p>
       </a>
       <div class="flex gap-4">
         {#each links as { href, text }}
-          <a {href} target="_blank" class="flex items-center gap-2 hover:underline">
+          <a {href} target="_blank" class="flex items-center gap-2 hover:underline no-underline decoration-black">
             <p class="text-sm">{text}</p>
           </a>
         {/each}
